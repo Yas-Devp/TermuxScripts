@@ -1,5 +1,9 @@
 import curses
 import time
+
+
+PASSWORD="your password here"
+
  
 def animate_login_screen(stdscr):
     # Clear the screen
@@ -44,7 +48,7 @@ def animate_login_screen(stdscr):
         key = stdscr.getch()
  
         # Check if Enter key is pressed
-        if key == ord('\n') and "yaspro2008" in password :
+        if key == ord('\n') and PASSWORD in password :
             # Clear the screen
             stdscr.clear()
  
